@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>MindAR 名片互動</title>
+<title>MindAR 名片互動示範</title>
 <!-- 引入 A-Frame 與 MindAR 核心庫 -->
 <script src="https://cdn.jsdelivr.net/npm/aframe@1.4.2/dist/aframe.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-
@@ -76,7 +76,7 @@ overflow: hidden;
     this.prevAngle = Math.atan2(dy, dx);
     }
     });
-    範例程式碼3// 兩指移動時執行縮放與旋轉
+    // 兩指移動時執行縮放與旋轉
 canvas.addEventListener('touchmove', (e) => {
 if (e.touches.length === 2 && this.prevDistance !== null) {
 const dx = e.touches[0].clientX - e.touches[1].clientX;
